@@ -5,16 +5,14 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Getter
-@Builder
-// @NoArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
-public class PostDetailResponseDto {
+@Builder
+public class PostWithCommentCountResponseDto {
     private Long id;
     private String title;
     private String content;
     private String author;
-    private List<CommentResponseDto> comments;
+    private int commentCount;
 }
