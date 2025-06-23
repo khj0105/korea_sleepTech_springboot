@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Getter @Setter
 @Builder
 @NoArgsConstructor @AllArgsConstructor
-public class Post {
+public class 0Post {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
